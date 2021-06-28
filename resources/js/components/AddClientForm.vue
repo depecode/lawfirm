@@ -6,7 +6,7 @@
         <input type="text" v-model="client.dateprofiled"  placeholder="dateprofiled"/>
         <input type="text" v-model="client.primarylegalcounsel"  placeholder="primarylegalcounsel"/>
         <input type="text" v-model="client.dateofbirth" placeholder="dateofbirth"/>
-        <input type="image" v-model="client.profileimage" placeholder="profileimage"/>
+        <input type="text" v-model="client.profileimage" placeholder="profileimage"/>
         <font-awesome-icon
             icon="plus-square"
             @click="addClient()"

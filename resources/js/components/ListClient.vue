@@ -15,11 +15,11 @@
     </thead>
         <tbody>
 
-        <!-- <span :class="[client.firstname ? 'firstname': '', 'clientText' ]">{{ client.firstname }}</span> -->
         <!-- <span>{{ client.firstname }}</span> -->
     
         <tr>
-        <td>{{ client.firstname }}</td>
+        <td>        <span :class="[client.firstname ? 'firstname': '', 'clientText' ]">{{ client.firstname }}</span>
+</td>
         <td>{{ client.lastname }}</td>
         <td>{{ client.email }}</td>
         </tr>
