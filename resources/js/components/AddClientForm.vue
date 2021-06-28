@@ -1,12 +1,12 @@
 <template>
     <div class="addClient">
-        <input type="text" v-model="client.firstname" />
-        <input type="text" v-model="client.lastname" />
-        <input type="text" v-model="client.email" />
-        <input type="text" v-model="client.dateprofiled" />
-        <input type="text" v-model="client.primarylegalcounsel" />
-        <input type="text" v-model="client.dateofbirth" />
-        <input type="text" v-model="client.profileimage" />
+        <input type="text" v-model="client.firstname" placeholder="firstname" />
+        <input type="text" v-model="client.lastname" placeholder="lastname" />
+        <input type="text" v-model="client.email"  placeholder="email"/>
+        <input type="text" v-model="client.dateprofiled"  placeholder="dateprofiled"/>
+        <input type="text" v-model="client.primarylegalcounsel"  placeholder="primarylegalcounsel"/>
+        <input type="text" v-model="client.dateofbirth" placeholder="dateofbirth"/>
+        <input type="image" v-model="client.profileimage" placeholder="profileimage"/>
         <font-awesome-icon
             icon="plus-square"
             @click="addClient()"

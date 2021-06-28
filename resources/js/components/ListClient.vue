@@ -5,11 +5,32 @@
         @change="updateCheck()"
         v-model="client.firstname"
         />
-        <span :class="[client.firstname ? 'firstname': '', 'clientText' ]">{{ client.firstname }}</span>
-        <button @click="removeClient()" class="trashcan">
-            <font-awesome-icon icon="trash"/>
-        </button>
-    </div>
+        <table>
+        <thead>
+        <tr>
+        <th>FirstName</th>
+        <th>Last</th>
+        <th>Email</th>
+        </tr>
+    </thead>
+        <tbody>
+
+        <!-- <span :class="[client.firstname ? 'firstname': '', 'clientText' ]">{{ client.firstname }}</span> -->
+        <!-- <span>{{ client.firstname }}</span> -->
+    
+        <tr>
+        <td>{{ client.firstname }}</td>
+        <td>{{ client.lastname }}</td>
+        <td>{{ client.email }}</td>
+        </tr>
+        
+    </tbody>
+            </table>
+
+            <button @click="removeClient()" class="trashcan">
+                <font-awesome-icon icon="trash"/>
+            </button>
+        </div>
 </template>
 
 <script>
